@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentLocation">
+
+    <!-- Fragmento Location -->
+    <fragment
+        android:id="@+id/fragmentLocation"
+        android:name="com.example.l4_20202137.LocationFragment"
+        android:label="Location Fragment"
+        tools:layout="@layout/fragment_location" >
+        <action
+            android:id="@+id/action_locationFragment_to_pronosticosFragment"
+            app:destination="@id/fragmentPronosticos" />
+    </fragment>
+
+    <!-- Fragmento Pronosticos -->
+    <fragment
+        android:id="@+id/fragmentPronosticos"
+        android:name="com.example.l4_20202137.PronosticosFragment"
+        android:label="Pronosticos Fragment"
+        tools:layout="@layout/fragment_pronosticos" />
+
+    <!-- Fragmento Deportes -->
+    <fragment
+        android:id="@+id/fragmentDeportes"
+        android:name="com.example.l4_20202137.DeportesFragment"
+        android:label="Deportes Fragment"
+        tools:layout="@layout/fragment_deportes" />
+</navigation>
